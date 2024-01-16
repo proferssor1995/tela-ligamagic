@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="visual.css">
+    <title>Primeira etapa</title>
+</head>
+<body>
+        <header>  
+    
+
+    </header>      
+
+
+    <display class="carousel-display">    
+           <section> <!--produto principal como destaque-->
+                <div> 
+                            <div class="overlay" id="overlay" >
+                                <img id="overlay-image" src="./Image/Placeholder/Desktop/Carta_Counterspell.png">
+                            </div>
+                </div>
+
+            </section>
+            <article>       <!--carrossel com as imagens-->
+
+
+
+                <div class="slider">
+
+                    <div class="carousel-container">
+
+                        <hr color="#b4b8af"> <!--linha horizontal para separar a imagem destacada e o carrossel-->
+
+                        
+                        <div class="carousel"> 
+
+                            <button class="carousel-button" onclick="prevSlide()">
+                                <img src="./seta/Carousel/Icon/Fill/Left/M.png" class="button">     <!--botão da seta esquerda para navegar entre imagens-->
+                            </button>
+
+                            <div class="carousel-item" onclick="toggleFilter(0)"><img src="./Image/Placeholder/Desktop/Card_Carroussel1.png" class="slider" >
+                            </div>
+
+                            <div class="carousel-item" onclick="toggleFilter(1)"><img src="./Image/Placeholder/Desktop/Card_Carroussel.png"  class="slider" >
+                            </div>
+                            
+                            <div class="carousel-item" onclick="toggleFilter(2)"><img src="./Image/Placeholder/Desktop/Carta_Counterspell.png" class="slider" >
+                            </div>
+
+                            <button class="carousel-button" onclick="nextSlide()">
+                                <img src="./seta/Carousel/Icon/Fill/Right/M.png" class="button">    <!--botão da seta direita para navegar entre imagens-->
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+        
+            </article>
+    </display>
+
+
+
+        <div class="linha-vertical">  <!--linha vertical para separar as imagens e a descrição-->   
+        <br>
+        <div class="card-info">            
+            <nav>
+                <ul>
+                    <li>Home</li>
+                    <li>Magic:The Gathering</li>
+                    <li>Busca</li>
+                    <li>Bazar - Lista de Desejos</li>
+                </ul>
+            </nav>     
+              
+            <div class="edição-box">
+                 <img src="./Icon/Fill/Common/M.png">
+                  <p1> #45</p1>
+                  <p>Dominaria Remastered.</p>
+                <div class="form-group">
+                    <label for="exampleFormControlSelect1"></label>
+                    <select class="seleção-edição" id="edição">
+                      <option>DMR</option>
+                      <option>CMB</option>
+                      <option>DR</option>
+
+                    </select>
+
+                 </div>
+
+             </div>
+
+
+            <div class="nome-card"> Contramágica
+                <label for="like-checkbox" class="like-label">&#x2764;</label> <img src="./Button/Icon/Mobile/Options/icon.png">
+
+            </div>
+       
+              
+             <div class="nome-original">Counterspell</div>
+
+
+             <div class="lista-compra">
+                 <p>Lista de Compras<img src="./Lista de Compras/Icon/Outline/Help/M.png"></p> 
+
+                 <p1>Add a carta aqui e deixe que a Liga calcule o melhor preço para você!</p1>
+                 <input class="qty-comprar" type="number" id="lc_buy_inline" value="1" min="1" max="8">
+                             
+             </div>
+             
+
+             
+        </div>     
+
+     <aside> <!--descrição do produto-->
+
+        <div class=="descrição-carta">
+            <p style="width: 643px;">Detalhes da Carta</p>
+                <div class="detalhe-carta">
+                    <nav>
+                        <ul>
+                            <li>Cor <p1>Azul</p1></li>
+                            <li>Custo de mana <img src="Icon/Fill/Blue_Mana_Cost/M.png"> <img src="Icon/Fill/Blue_Mana_Cost/M.png">  </li>
+                            <li>Tipo <p2>Mágica Instantânea</p2></li>
+                        </ul>
+                    </nav>
+                 </div>
+
+
+
+
+        </div>  
+
+        
+
+    </aside>
+
+    <br>
+
+    <div class="preço-carta">
+        <p1><img src="./Icon.png"> Normal</p1>
+        
+        <div class="box-container">
+            <div class="description">Preço Médio no Marketplace <img src="./Lista de Compras/Icon/Outline/Help/M.png"></div>
+            <div class="values-container">
+              <div class="value">R$ 6,28</div>
+              <div class="value">R$ 9,39</div>
+              <div class="value">R$ 14,00</div>
+            </div>
+          </div>
+    </div>
+
+
+
+
+        
+    <script src="script.js"> </script>
+    
+</body>
+</html>
