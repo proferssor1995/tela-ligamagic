@@ -57,3 +57,13 @@ function updateCarousel() {     //atualizar o índice de seleção
  });
 }
 
+function increment() {
+    var input = document.getElementById('quantity');
+    input.value = parseInt(input.value, 10) + 1;
+  }
+  
+  function decrement() {
+    var input = document.getElementById('quantity');
+    input.value = Math.max(parseInt(input.value, 10) - 1, 1);
+  }
+  
